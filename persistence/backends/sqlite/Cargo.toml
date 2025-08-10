@@ -4,5 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+anyhow = "1.0.98"
+async-trait = "0.1.88"
+itertools = "0.14.0"
 scryer-persistence-foundation = { path = "../../foundation" }
-tracing = "0.1.41"
+sqlx = { version = "0.8.6", features = ["runtime-tokio", "tls-native-tls", "sqlite", "derive", "macros", "migrate", "uuid", "time"] }
+tracing = { version = "0.1.41", features = ["attributes", "std", "tracing-attributes", "log"] }
