@@ -1,0 +1,3 @@
+[workspace]
+resolver = "3"
+members = ["app", "persistence", "persistence/foundation", "persistence/backends/sqlite"]

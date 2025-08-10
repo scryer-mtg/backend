@@ -1,0 +1,12 @@
+[package]
+name = "scryer-persistence"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+sqlite = ["dep:scryer-persistence-backend-sqlite"]
+
+[dependencies]
+scryer-persistence-foundation = { path = "./foundation" }
+scryer-persistence-backend-sqlite = { path = "./backends/sqlite", optional = true }
