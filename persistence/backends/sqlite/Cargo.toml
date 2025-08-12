@@ -5,3 +5,4 @@ edition = "2024"
 
 [dependencies]
 scryer-persistence-foundation = { path = "../../foundation" }
+tracing = "0.1.41"
